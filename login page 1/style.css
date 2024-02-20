@@ -1,0 +1,135 @@
+body {
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    margin: 0;
+    height: 100vh;
+    padding: 0 32px;
+    background: #eff9ff;
+    font-family: "Euclid Circular A";
+}
+
+.background {
+    position: fixed;
+    top: -50vmin;
+    left: -58vmin;
+    width: 100vmin;
+    height: 100vmin;
+    border-radius: 47% 53% 61% 39% / 45% 51% 49% 55%;
+    background: #65c8ff;
+}
+
+.card {
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    width: 50%;
+    margin: 0 20px;
+    padding: 170px 30px 54px;
+    border-radius: 18px;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -880px;
+    left: 50%;
+    translate: -50% 0;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background: #216ce7;
+}
+
+.background::after {
+    content: "";
+    position: inherit;
+    right: -50vmin;
+    bottom: -55vmin;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: #143d81;
+}
+
+.card .logo {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    translate: -58% 0;
+    width: 64px;
+    height: 64px;
+}
+
+.form {
+    width: 100%;
+    margin: 0 0 44px;
+    display: grid;
+    gap: 12px;
+}
+
+input {
+    border: 2px solid #ebebeb;
+    padding: 0 30px;
+    font-family: inherit;
+    font-size: 16px;
+    color: rgb(0 0 0 / 38%);
+    border-radius: 1.5rem;
+    width: 50%;
+}
+
+.username {
+    height: 45px;
+}
+
+.password {
+    height: 45px;
+}
+
+.email {
+    height: 45px;
+}
+
+.parent {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.parent {
+    background-image: linear-gradient(to right,
+            #25aae1,
+            #4481eb,
+            #04befe,
+            #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.parent:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.card>footer {
+    color: #a1a1a1;
+}
+
+.card>footer>a {
+    color: #216ce7;
+}
